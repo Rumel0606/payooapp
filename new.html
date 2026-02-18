@@ -80,17 +80,21 @@
       <div class="card-body">
         <fieldset class="fieldset">
           <label class="label text-neutral font-semibold">Agent  Number</label>
-          <input id="cashout-number" minlength="11" maxlength="11" type="text" class="input rounded-full bg-base-200 outline-0" placeholder="Enter 11 digit number" />
+          <input id="cashout-number" minlength="11" maxlength="11" type="number" class="input rounded-full bg-base-200 outline-0 w-full" placeholder="Enter 11 digit number" />
           <br>
-          <label class="label text-neutral font-semibold">4 digit pin</label>
-          <input id="input-pin" type="password" class="input rounded-full bg-base-200 outline-0" placeholder="4 digit pin" />
+          <label class="label text-neutral font-semibold">Amount</label>
+          <input id="cashout-amount" type="number" class="input rounded-full bg-base-200 outline-0 w-full" placeholder="Enter amount to withdraw" />
+          <br>
+          <label class="label text-neutral font-semibold">Pin Number</label>
+          <input id="cashout-pin" type="password" class="input rounded-full bg-base-200 outline-0 w-full" placeholder="4 digit pin number" />
+          <br>
           <div><a class="link link-hover">Forgot password?</a></div>
-          <button id="login-btn" class="btn btn-primary mt-4 rounded-full">Login</button>
+          <button id="cashout-btn" class="btn btn-primary mt-4 rounded-full">Withdraw Money</button>
         </fieldset>
       </div>
     </div>
 </div>
 </section>
-    <script src="../scripts/login.js"></script>
+    <script src="./scripts/cashout.js"></script>
 </body>
 </html>
