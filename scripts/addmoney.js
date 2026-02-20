@@ -19,12 +19,12 @@ document.getElementById("add-money-btn").addEventListener("click",function(){
    if(addMoneyPin == "1234"){
     alert(`Add Money from ${bankAccount} at
          ${ new Date()}`)
-     setBalance(newBalance);
+       setBalance(newBalance)
      const history = document.getElementById("history");
 
      const newHistory = document.createElement("div")
      newHistory.innerHTML = `
-       <div class="transactions-card p-5 bg-base-100">
+       <div class="transactions-card p-5 bg-base-100 mt-4">
            Add Money from ${bankAccount}, acc no ${accNo}
          ${new Date()}
       </div>

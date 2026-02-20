@@ -66,13 +66,13 @@
         <img src="images/opt-3.png" >
         <p class="text-[15px] text-neutral/80">Pay Bill</p>
    </button>
-   <button class="btn flex-col h-full py-4 btn-soft btn-primary">
+   <button onclick="showOnly('history')" class="btn flex-col h-full py-4 btn-soft btn-primary">
         <img src="images/opt-3.png" >
         <p class="text-[15px] text-neutral/80">Transactions</p>
    </button>
  </div>
 </section>
-<section id="add-money" class="w-11/12 mx-auto text-xl">
+<section id="add-money" class="w-11/12 mx-auto text-xl mt-4 hidden">
 <h2 class="font-bold ">Add Money</h2>
  <div class="from mt-5">
     <div class="card bg-base-100 w-full  shadow-xl  mx-auto rounded-2xl">
@@ -102,9 +102,9 @@
 </div>
 </section> 
 
-<section id="cashout" class="w-11/12 mx-auto text-xl">
+<section id="cashout" class="w-11/12 mx-auto text-xl mt-4 hidden">
     <h2 class="font-bold ">Cashout</h2>
-    <div class="from mt-5">
+    <div class="from mt-5 ">
     <div class="card bg-base-100 w-full  shadow-xl  mx-auto rounded-2xl">
       <div class="card-body">
         <fieldset class="fieldset">
@@ -125,7 +125,7 @@
 </div>
 </section>
 
-<section onclick="showOnly('send-money')" id="send-money" class="w-11/12 mx-auto text-xl">
+<section onclick="showOnly('send-money')" id="send-money" class="w-11/12 mx-auto text-xl mt-4 hidden">
     <h2 class="font-bold ">Send Money</h2>
     <div class="from mt-5">
     <div class="card bg-base-100 w-full  shadow-xl  mx-auto rounded-2xl">
@@ -147,12 +147,12 @@
     </div>
 </div>
 </section>
-<section class="w-11/12 mx-auto text-xl" id="history">
+<section class="w-11/12 mx-auto text-xl mt-4 hidden" id="history">
  <h2 class="font-bold ">Transactions</h2>
  <div class="" id="history-container space-y-4">
-  <div class="transactions-card p-5 bg-base-100 ">
+  <!-- <div class="transactions-card p-5 bg-base-100 mt-2">
 
-  </div>
+  </div> -->
  </div>
 </section>
 
