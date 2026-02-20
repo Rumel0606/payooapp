@@ -11,7 +11,7 @@ console.log(pinValu);
 if(numberValu == '01745671928' && pinValu == '1234'){
     // Login succes alert
     alert('Login Successfull')
-    window.location.assign("/new.html");
+    window.location.assign("new.html");
 
 } else{
     // Login failed alert
